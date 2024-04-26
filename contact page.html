@@ -1,105 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-h1{
-
-    background-color: #333;
-    color: #edeaea;
-    padding: 20px;
-
-}
-
-.container {
-    max-width: 599px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(33, 33, 33, 0.1);
-}
-
-h2 {
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 24px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bab9b9;
-    border-radius: 6px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #ffffffd0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.35s;
-}
-
-button[type="submit"]:hover {
-    background-color: #125091;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    
+    <title>Contact Us - Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1> <center> Contact Us </center> </h1> 
+        <h1>Contact Us</h1>
+        <p>Please fill in the form below to contact us.</p>
     </header>
-
-
-    <div class="container">
-        <form action="submit_contact.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Submit">
+    <section>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
-    </div>
-
-    <footer>
-        <center> <p style="margin-bottom: 11px;">&copy; 2024 Your Company Name. All rights reserved.</p> </center>
-    </footer> 
+    </section>
 </body>
 </html>
