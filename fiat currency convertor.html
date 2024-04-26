@@ -208,49 +208,45 @@
         <div class="dropdown-menu">
           <button class="menu-btn">Services</button>
             <div class="menu-content">
-              <a class="links-hidden" href="crypto currency convertor.html">Crypto Currency Converter</a>
-              <a class="links-hidden" href="fiat currency convertor.html">Fiat-Currency Converter</a>
+              <a class="links-hidden" href="crypto currency convertor .html">Crypto Currency Converter</a>
             </div>
         </div>
       </div>
     </nav> 
     <div class="wrapper">
       <header>Fiat-Currency Converter</header>
-      <form action="#">
+      <form>
         <div class="amount">
-          <p>Enter Amount</p>
+          <p id="amount1">Enter Amount</p>
           <input type="number" min="0" placeholder="Enter the Amount">
         </div>
         <div class="drop-list">
           <div class="from">
             <p>From</p>
-            <div class="select-box">
+            <div class="select-box" id="from1">
                 <select style="width: 100px;">
                   <option value="select">Select</option>  
                   <option value="India">Rupee</option>
-                  <option value="America">USD</option>
-                  <option value="Russia">Ruble</option>
-                  <option value="Canada">CAD</option>
-                  <option value="Dubai">AED</option>
+                  <option value="USA">USD</option>
+                  <option value="CAD">CAD</option>
                 </select>
             </div>
           </div>
           <div class="to">
             <p>To</p>
-            <div class="select-box">
+            <div class="select-box" id="to1">
               <select style="width: 100px;">
                   <option value="select">Select</option>
                   <option value="India">Rupee</option>
-                  <option value="America">USD</option>
-                  <option value="Russia">Ruble</option>
-                  <option value="Canada">CAD</option>
-                  <option value="Dubai">AED</option>
+                  <option value="USA">USD</option>
+                  <option value="CAD">CAD</option>
               </select>
             </div>
           </div>
         </div>
         <div class="exchange-rate">Getting exchange rate</div>
-        <button>Get Exchange Rate</button>
+        <button onclick="convert()">Get Exchange Rate</button>
+        <div id="result"></div>
       </form>
     </div>
   </body>
