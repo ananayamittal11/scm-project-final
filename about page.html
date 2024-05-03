@@ -1,94 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Currency Converter</title>
+</head>
+<style>
+    /* styles.css */
+body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0f1;
+    line-height: 1.55;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header, nav, main, footer {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
 }
 
 header {
-    background-color: #333333f6;
-    color: #fff;
-    padding: 10px;
-}
-
-.container {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(30, 30, 30, 0.504);
+    background: #007BFF;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-nav ul li a {
-    color: #fff;
+nav a {
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-nav ul li a.active {
-    color: #f8d858;
+nav .active, nav a:hover {
+    color: #18a2c1;
+}
+
+main {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+    padding: 20px 0;
+    background: #2C3E50;
+    color: #ffffff;
 }
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Currency Converter</title>
-    </style>
-    
-</head>
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+</style>
 <body>
     <header>
-       <center> <h1>About Currency Converter</h1></center>
-        <nav>
-            <ul>
-                <li><a href="about.html" class="active">About</a></li>
-            </ul>
-        </nav>
+        <h1>About Our Currency Converter</h1>
     </header>
-
-    <div class="container">
-        <h2>Our Mission</h2>
-        <p>
-            Our mission is to provide a user-friendly and efficient tool for currency conversion, helping users 
-            easily convert between different currencies with accurate and up-to-date exchange rates.
-        </p>
-
-        <h2>How it Works</h2>
-        <p>
-            Our currency converter utilizes real-time exchange rate data from trusted sources to ensure accuracy 
-            in currency conversion. Users can simply select the currencies they want to convert between, enter 
-            the amount, and instantly get the converted result.
-        </p>
-
-        <h2>Contact Us</h2>
-        <p>
-            Have questions or feedback ? Feel free to reach out to us at <a href="mailto:contact@currencyconverter.com">contact@currencyconverter.com</a>.
-        </p>
-    </div>
-
+    <nav>
+        <ul>
+            <li><a href="welcome page currency convertor.html">Home</a></li>
+            <li><a href="contact page.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>What is Our Currency Converter?</h2>
+            <p>
+                Our Currency Converter is a web tool designed to help individuals and businesses convert amounts between different currencies effortlessly. Using up-to-date exchange rates, our application ensures accurate conversions in real-time, supporting over 150 world currencies.
+            </p>
+        </section>
+        <section>
+            <h2>Who Can Use This Tool?</h2>
+            <p>
+                Whether you're planning a trip abroad, conducting international business, or simply exploring economic scenarios, our currency converter is tailored for anyone needing quick and reliable currency calculations.
+            </p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Real time exchange rate updates.</li>
+                <li>Supporting over 150 currencies.</li>
+                <li>Easy to use and mobile-friendly interface.</li>
+                <li>No registration required to access the main features.</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Currency Converter. All rights reserved.</p>
+        <p>&copy; 2024 Currency Converter, Inc. All rights reserved.</p>
     </footer>
 </body>
 </html>

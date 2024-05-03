@@ -29,7 +29,7 @@
         border-radius: 7px;
         background: #e2e2e2;
         box-shadow: 7px 7px 20px rgba(4, 4, 4, 0.05);
-        margin-top: 95px;
+        margin-top: 96px;
       }
       .wrapper header{
         font-size: 28px;
@@ -60,7 +60,11 @@
       }
       form input:focus{
         padding: 0 14px;
+<<<<<<< HEAD
         border: 2px solid #91d5f2;
+=======
+        border: 2px solid #72d1fa;
+>>>>>>> 1829bb5782fe3608f94fb24b3395a85cc03f22f7
       }
       form .drop-list{
         display: flex;
@@ -75,11 +79,7 @@
         align-items: center;
         border-radius: 5px;
         justify-content: center;
-<<<<<<< HEAD
-        border: 1px solid #b2b1b1;
-=======
-        border: 1px solid #8b8b8b;
->>>>>>> b884b4874c55cc5f8e3eabdc71081c2c7ac52a84
+        border: 1px solid #c2c0c0;
       } 
       .select-box img{
         max-width: 21px;
@@ -107,13 +107,13 @@
         font-size: 22px;
       }
       form .exchange-rate{
-        font-size: 18px;
+        font-size: 19px;
         margin: 20px 0 30px;
       }
       form button{
         height: 52px;
         color: #fff;
-        font-size: 17px;
+        font-size: 18px;
         cursor: pointer;
         background: #019adb;
         transition: 0.3s ease;
@@ -206,56 +206,51 @@
     <nav>
       <div class="container2">
         <img src="C:\Users\ASUS\OneDrive\Desktop\Yudhish\FEE\LOGO" height="70px" width="70px">
-        <a href="C:\Users\ASUS\OneDrive\Desktop\Yudhish\FEE\Welcome page for project">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="welcome page currency convertor.html">Home</a>
+        <a href="about page.html">About</a>
+        <a href="contact page.html">Contact</a>
         <div class="dropdown-menu">
           <button class="menu-btn">Services</button>
             <div class="menu-content">
-              <a class="links-hidden" href="C:\Users\hi\Desktop\Project\Crypto Currency Converter.html">Crypto Currency Converter</a>
-              <a class="links-hidden" href="C:\Users\hi\Desktop\Project\Currency converter.html">Fiat-Currency Converter</a>
+              <a class="links-hidden" href="crypto currency convertor .html">Crypto Currency Converter</a>
             </div>
         </div>
       </div>
     </nav> 
     <div class="wrapper">
       <header>Fiat-Currency Converter</header>
-      <form action="#">
+      <form>
         <div class="amount">
-          <p>Enter Amount</p>
+          <p id="amount1">Enter Amount</p>
           <input type="number" min="0" placeholder="Enter the Amount">
         </div>
         <div class="drop-list">
           <div class="from">
             <p>From</p>
-            <div class="select-box">
+            <div class="select-box" id="from1">
                 <select style="width: 100px;">
                   <option value="select">Select</option>  
                   <option value="India">Rupee</option>
-                  <option value="America">USD</option>
-                  <option value="Russia">Ruble</option>
-                  <option value="Canada">CAD</option>
-                  <option value="Dubai">AED</option>
+                  <option value="USA">USD</option>
+                  <option value="CAD">CAD</option>
                 </select>
             </div>
           </div>
           <div class="to">
             <p>To</p>
-            <div class="select-box">
+            <div class="select-box" id="to1">
               <select style="width: 100px;">
                   <option value="select">Select</option>
                   <option value="India">Rupee</option>
-                  <option value="America">USD</option>
-                  <option value="Russia">Ruble</option>
-                  <option value="Canada">CAD</option>
-                  <option value="Dubai">AED</option>
+                  <option value="USA">USD</option>
+                  <option value="CAD">CAD</option>
               </select>
             </div>
           </div>
         </div>
         <div class="exchange-rate">Getting exchange rate</div>
-        <button>Get Exchange Rate</button>
+        <button onclick="convert()">Get Exchange Rate</button>
+        <div id="result"></div>
       </form>
     </div>
   </body>
